@@ -1,5 +1,5 @@
 <p align= "center"">
-    <a href="https://huggingface.co/Abdulmohsena/Faseeh">Model Repository</a>
+    This folder contains all code and data used to train Baleegh
 </p>
 
 
