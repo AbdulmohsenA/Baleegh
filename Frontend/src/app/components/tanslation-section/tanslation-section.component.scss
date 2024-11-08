@@ -1,0 +1,62 @@
+.svg-background {
+  height: 100%;
+  width: 100%;
+  background-color: var(--secondary-600); /* Color that fills the mask shape */
+  mask: url("../../../../public/images/pat.svg");
+  -webkit-mask: url("../../../../public/images/pat.svg");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.bg {
+  background-color: var(--secondary-400);
+  border-radius: 8px;
+  position: relative;
+  z-index: 1;
+  height: fit-content;
+}
+
+.text-box {
+  background-color: var(--secondary-600);
+  margin: 20px 20px 0 20px;
+  padding: 10px;
+  border-radius: 8px 8px 0 0;
+  color: var(--secondary-text);
+}
+.text-box::placeholder {
+  color: var(--placeholder-text);
+}
+.full-width-textarea {
+  direction: ltr;
+  width: -webkit-fill-available;
+  padding: 10px;
+}
+.btns-bar {
+  border-radius: 0 0 8px 8px;
+  background-color: var(--secondary-600);
+  margin: 0 20px 20px 20px;
+  padding: 10px;
+}
+.btn-not-listening {
+  color: var(--primary-500);
+}
+.btn-listening {
+  color: var(--secondary-300);
+  animation: pulse 1s infinite;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

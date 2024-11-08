@@ -1,0 +1,43 @@
+<div class="bg">
+  <div class="svg-background"></div>
+  <div class="text-left gap-0 flex flex-col">
+    <textarea
+      (input)="validateEnglish($event)"
+      [(ngModel)]="recognizedText"
+      class="mb-0 full-width-textarea text-box h-16 lg:h-32 resize-none focus:outline-none"
+      name=""
+      id=""
+      placeholder="Write your text here"
+    ></textarea>
+    <div class="btns-bar mt-0 flex flex-row justify-between">
+      <div>
+        <button
+          (click)="startRecognition()"
+          [ngClass]="isListening ? 'btn-listening' : 'btn-not-listening'"
+        >
+          <i class="fi fi-sc-microphone-alt"></i>
+        </button>
+      </div>
+      <div
+        [ngClass]="
+          recognizedText.length === maxLength ? 'max-char-text' : 'counter-text'
+        "
+        class="flex flex-row gap-1"
+      >
+        <p>{{ recognizedText.length }}/{{ maxLength }}</p>
+        @if (recognizedText.length===maxLength){
+        <i
+          class="fi fi-rr-diamond-exclamation mt-1"
+          ngxTooltip="الكتابة محدودة بـ 60 حرفًا لأغراض التجربة."
+          placement="top-end"
+          arrow
+        ></i>
+        }
+      </div>
+      <!-- TODO:Add text to voice(English). -->
+      <!-- <button class="btn-not-listening">
+        <i class="fi fi-sc-volume"></i>
+      </button> -->
+    </div>
+  </div>
+</div>

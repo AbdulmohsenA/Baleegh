@@ -1,0 +1,15 @@
+<div
+  class="flex items-center flex-col justify-center gap-4 2xl:gap-8 text-xl 2xl:text-2xl"
+>
+  <div class="font-bold">الانجليزية English</div>
+  <app-english-box
+    (textChange)="onTextChange($event)"
+    class="w-11/12 lg:w-2/3 2xl:w-1/2"
+  ></app-english-box>
+  <div class="font-bold">العربية Arabic</div>
+  <app-arabic-box
+    [isLoading]="isLoading"
+    [translatedText]="translatedText"
+    class="w-11/12 lg:w-2/3 2xl:w-1/2"
+  ></app-arabic-box>
+</div>

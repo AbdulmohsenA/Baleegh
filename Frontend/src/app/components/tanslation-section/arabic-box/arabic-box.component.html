@@ -1,0 +1,28 @@
+<div class="bg">
+  <div class="svg-background"></div>
+  <div class="text-left gap-0 flex flex-col">
+    <div class="text-right overflow-auto text-box h-16 lg:h-32">
+      <ngx-spinner
+        bdColor="rgb(13, 20, 30,0.5)"
+        size="medium"
+        color="#ffc882"
+        type="fire"
+        [fullScreen]="false"
+      ></ngx-spinner>
+      @if(translatedText){
+      <h1>{{ translatedText }}</h1>
+      } @else{
+      <h1 class="placeholder-text">{{ placeholderText }}</h1>
+      }
+    </div>
+    <div class="btns-bar mt-0 flex flex-row-reverse gap-4">
+      <button class="btn-not-listening" (click)="copyText()">
+        <i class="fi fi-br-clipboard"></i>
+      </button>
+      <!-- TODO:Add text to voice(Arabic). -->
+      <!-- <button class="btn-not-listening" (click)="showSpinner()">
+        <i class="fi fi-sc-volume"></i>
+      </button> -->
+    </div>
+  </div>
+</div>
