@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-chubby/css/uicons-solid-chubby.css");
+@import url("https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css");
+@import url("https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-rounded/css/uicons-bold-rounded.css");
+@import url("https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-rounded/css/uicons-solid-rounded.css");
+@import url("https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css");
+:root {
+  --primary-color: #ffc882;
+  --secondary-color: #292b22;
+  --surface-color: #e4d5b1;
+  --surface-border: #d3c5a3bd;
+  --primary-text: #162132;
+  --primary-fade: #99794e1c;
+  --secondary-text: #ffd39b;
+  --primary-100: #99784e;
+  --primary-200: #b38c5b;
+  --primary-300: #cca068;
+  --primary-400: #e6b475;
+  --primary-500: #ffc882;
+  --primary-600: #ffce8f;
+  --primary-700: #ffd39b;
+  --primary-800: #ffd9a8;
+  --primary-900: #ffdeb4;
+  --secondary-100: #0d141e;
+  --secondary-200: #0f1723;
+  --secondary-300: #121a28;
+  --secondary-400: #141e2d;
+  --secondary-500: #162132;
+  --secondary-600: #21304a;
+  --secondary-700: #454d5b;
+  --secondary-800: #5c6470;
+  --secondary-900: #5c6470;
+  --navbar-bg: #e4d5b1d7;
+  --placeholder-text: #9ca3af;
+}
+
+/* Define dark theme variables */
+.dark-theme {
+  --primary-color: #ffc882;
+  --secondary-color: #292b22;
+  --surface-color: #141e2d;
+  --surface-border: #141e2d;
+  --primary-text: #e6b475;
+  --primary-fade: #0d141e49;
+  --secondary-text: #162132;
+  --primary-100: #0d141e;
+  --primary-200: #0f1723;
+  --primary-300: #121a28;
+  --primary-400: #141e2d;
+  --primary-500: #162132;
+  --primary-600: #21304a;
+  --primary-700: #454d5b;
+  --primary-800: #5c6470;
+  --primary-900: #5c6470;
+  --secondary-100: #99784e;
+  --secondary-200: #b38c5b;
+  --secondary-300: #cca068;
+  --secondary-400: #e6b475;
+  --secondary-500: #ffc882;
+  --secondary-600: #ffce8f;
+  --secondary-700: #ffd39b;
+  --secondary-800: #ffd9a8;
+  --secondary-900: #ffdeb4;
+  --navbar-bg: #121a28d7;
+  --placeholder-text: #cca068;
+}
+// Scrollbar styles.
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: var(--secondary-100);
+}
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: var(--secondary-100);
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: var(--secondary-800);
+}
+
+body {
+  background-color: var(--surface-color);
+  font-family: "IBM Plex Sans Arabic", "IBM Plex Sans", sans-serif;
+  color: var(--secondary-400);
+  direction: rtl;
+}
+* {
+  transition: background-color 0.5s, border-color 0.5s ease;
+}
+.floating * {
+  color: #0d141e;
+}

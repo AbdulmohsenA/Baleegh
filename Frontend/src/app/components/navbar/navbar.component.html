@@ -1,0 +1,23 @@
+<nav
+  [ngClass]="{
+    'navbar-blur': navbarScrolled,
+  }"
+  class="navbar flex justify-between py-3 px-6 items-center"
+>
+  <div class="cursor-pointer flex flex-row">
+    <div
+      class="flex items-center align-content-center gap-1"
+      [routerLink]="['/']"
+    >
+      <img src="images/logo.png" class="logo" alt="" />
+      <img src="images/logo-text.png" class="logo hidden md:block" alt="" />
+    </div>
+  </div>
+  <div class="cursor-pointer" (click)="toggleTheme()">
+    <img
+      [src]="isDarkTheme ? 'images/light-mode.png' : 'images/dark-mode.png'"
+      class="icon p-1 rounded-lg"
+      alt="change theme"
+    />
+  </div>
+</nav>
