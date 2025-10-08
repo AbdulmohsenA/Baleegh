@@ -1,5 +1,5 @@
 <h1 align="center">
-  <a href="https://baleegh-production.up.railway.app/">جرب بليغ</a>
+  <a href="https:/abdulmohsena.github.io/BaleeghGUI">جرب بليغ</a>
 </h1>
 
 # Folder Structure:
